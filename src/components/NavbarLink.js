@@ -14,7 +14,7 @@ const NavbarLink = (props: Props) => {
   const isActive = location.pathname === href;
 
   return (
-    <li className={isActive && 'active'}>
+    <li className={isActive ? 'active' : ''}>
       <NavLink to={href}>
         {title}
         {isActive && <span className="sr-only">(current)</span>}

@@ -7,6 +7,7 @@ import { withRouter } from 'react-router';
 
 import RepoInfo from '../components/RepoInfo';
 import Comment from '../components/Comment';
+import NetworkStatus from '../components/network-status';
 
 import SUBSCRIPTION_QUERY from '../graphql/CommentSubscription.graphql';
 import SUBMIT_COMMENT_MUTATION from '../graphql/SubmitComment.graphql';
@@ -107,6 +108,7 @@ class CommentsPage extends React.Component {
             Comments for{' '}
             <a href={repository.html_url}>{repository.full_name}</a>
           </h1>
+          <NetworkStatus />
           <RepoInfo entry={filter(RepoInfo.fragments.entry, entry)} />
           {currentUser ? (
             <form onSubmit={this.submitForm}>

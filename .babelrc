@@ -1,5 +1,9 @@
 {
-  "plugins": ["react-native-web/babel", "transform-class-properties"],
+  "plugins": [
+    "react-native-web/babel",
+    "transform-class-properties",
+    "transform-runtime"
+  ],
   "presets": [
     "stage-2",
     "react-native",

@@ -2,6 +2,7 @@
 import * as React from 'react';
 
 import FeedEntry from './FeedEntry';
+import NetworkStatus from './network-status';
 
 type Props = {
   entries: Array<Object>,
@@ -14,6 +15,7 @@ const Feed = ({ entries = [], loggedIn, onVote, onLoadMore }) => {
   if (entries && entries.length) {
     return (
       <div>
+        <NetworkStatus />
         {entries.map(
           entry =>
             entry ? (
