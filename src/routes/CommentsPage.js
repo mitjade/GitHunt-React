@@ -45,7 +45,7 @@ class CommentsPage extends React.Component {
         document: SUBSCRIPTION_QUERY,
         variables: { repoFullName: nextProps.entry.repository.full_name },
         updateQuery: (previousResult, { subscriptionData }) => {
-          const newComment = subscriptionData.data.commentAdded;
+          const newComment = subscriptionData.commentAdded;
           // if it's our own mutation, we might get the subscription result
           // after the mutation result.
           if (isDuplicateComment(newComment, previousResult.entry.comments)) {
