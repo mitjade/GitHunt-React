@@ -74,7 +74,7 @@
     "persistgraphql": "^0.3.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-apollo": "^2.0.0-beta.0",
+    "react-apollo": "^2.0.1",
     "react-dom": "^16.0.0",
     "react-ga": "^2.1.0",
     "react-native-web": "^0.1.6",
